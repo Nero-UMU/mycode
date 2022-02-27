@@ -21,5 +21,5 @@ else:
             f.write(data)
             if len(data) < size:
                 break
-    print('Download file %s successfully!' %filename)
+    print('Download file %s successfully!' %newName)
 s.close()
