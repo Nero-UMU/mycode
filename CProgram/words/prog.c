@@ -16,6 +16,6 @@ int main(int argc, char *argv[])
             max=i;
         }
     }
-    printf("%c\n%d",max+'a',count[max]);
+    printf("%c\n%d\n",max+'a',count[max]);
     return 0;
 }
