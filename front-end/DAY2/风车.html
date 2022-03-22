@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style type="text/css">
+            #box{
+                width: 585px;
+                height: 585px;
+                margin: 30px auto;
+            }
+            img{
+                /* 引用动画 */
+                /* 动画名称 */
+                /* animation-name: fengche; */
+                /* 动画时间 */
+                /* animation-duration: 1s; */
+                /* 动画播放速度 */
+                /* animation-timing-function: linear; */
+                /* 动画延迟播放 */
+                /* animation-delay: 1s; */
+                /* 播放次数 infinite无限循环 */
+                /* animation-iteration-count: infinite; */
+                animation: fengche 0.5s linear infinite;
+            }
+            #box img:hover{
+                /* 动画播放状态 */
+                animation-play-state: paused;
+
+            }
+            /* 声明动画属性
+            from   初始动画帧
+            to   结束动画帧
+            0%   初始动画帧
+            30%   30%时的动画帧
+            100%   结束动画帧 */
+            @keyframes fengche {
+                from{
+                    transform: rotate(0deg);
+                }
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+       <div id="box">
+           <img src="img/fengche.png" alt="">
+       </div> 
+    </body>
+</html>
