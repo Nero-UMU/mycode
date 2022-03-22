@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style type="text/css">
+        /*id选择器*/
+        #first{
+            width: 400px;
+            height: 100px;
+            /*border 边框:大小 样式（实现）颜色   三者顺序可变*/
+            border: 2px solid blue;
+        }
+        /*类选择器*/
+        .second{
+            width: 500px;
+            height: 200px;
+            border: 2px dashed red;
+            font-size: 40px;
+        }
+        /*标签选择器*/
+        p{
+            /*字体大小*/
+            font-size: 24px;
+            /*字体颜色*/
+            color:red;
+            /*字体*/
+            font-family: "楷体";
+        }
+        /*通配选择器:会把页面所有标签都选中，通常用于重置样式*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*派生选择器*/
+        #first span{
+            font-weight: bolder;
+            color: blue;
+        }
+        /*父子选择器*/
+        #first>span{
+            font-size: 40px;
+        }
+        /*群组选择器*/
+        #third, .pass{
+            color:green;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="first">
+        日照香炉升<span>紫烟</span>，要看瀑布挂钱川
+        <span>hehe</span>
+        </div>
+        <span class="pass">passby...</span>
+        <div class="second">biubiubiu</div>
+        <!--段落标签-->
+        <p>hello world</p>
+        <p>就这几个字...</p>
+        <!--span 一块文字-->
+        <span id="first">你好</span>
+        <div id="third">
+            非刘之下三千吃，一适应和罗就天
+        </div>
+    </body>
+</html>

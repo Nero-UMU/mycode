@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style type="text/css">
+            *{
+                margin:0;
+                padding:0;
+                /*去掉列表的点*/
+                list-style: none;
+            }
+            #box{
+                width: 1200px;
+                height: 500px;
+                background-color: pink;
+                margin:auto;
+            }
+            h2{
+                height: 70px;
+                /*左右居中*/
+                text-align: center;
+                /*背景颜色*/
+                background-color:red;
+                /*当行高和容器高度一致的时候，可以实现垂直居中*/
+                line-height: 70px;
+                /*颜色*/
+                color:white;
+                /*加粗*/
+                font-weight: bolder;
+                /*字体*/
+                font-family: 'Courier New', Courier, monospace;
+                /*字体大小*/
+                font-size: 45px;
+            }
+            .big_pic{
+                width: 700px;
+                height: 420px;
+                background-color: aque;
+                /*超出边界隐藏*/
+                overflow: hidden;
+                float: left;
+                margin-top: 8px;
+            }
+            /*处理小的区域*/
+            .small_pic{
+                width: 500px;
+                height: 420px;
+                float:right;
+                /*超出部分不可见，并添加滚动条*/
+                overflow: scroll;
+                margin-top: 4px;
+            }
+            /*控制图片*/
+            .big_pic img{
+                /*让图片大小刚好适合父容器*/
+                width: 100%;
+                border: 5px solid white;
+            }
+            .small_pic img{
+                width:100%;
+                border: 4px solid yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <h2>my wife</h2>
+            <div class="big_pic">
+                <ul>
+                    <li id="pic1"><img src="./img/nero1.jpeg" alt=""></li>
+                    <li id="pic2"><img src="./img/nero2.jpeg" alt=""></li>
+                    <li id="pic3"><img src="./img/nero3.jpeg" alt=""></li>
+                    <li id="pic4"><img src="./img/nero4.jpeg" alt=""></li>
+                    <li id="pic5"><img src="./img/nero5.jpeg" alt=""></li>
+                    <li id="pic6"><img src="./img/nero6.jpeg" alt=""></li>
+                    <li id="pic7"><img src="./img/nero7.jpeg" alt=""></li>
+                    <li id="pic8"><img src="./img/nero8.jpeg" alt=""></li>
+                    <li id="pic9"><img src="./img/nero9.jpeg" alt=""></li>
+                    <li id="pic10"><img src="./img/nero10.jpeg" alt=""></li>
+                </ul>
+            </div>
+            <!--超链接的锚点用法，在href中写id的名称-->
+            <div class="small_pic">
+                <ul>
+                    <li><a href="#pic1"><img src="./img/nero1.jpeg" alt=""></a></li>
+                    <li><a href="#pic2"><img src="./img/nero2.jpeg" alt=""></a></li>
+                    <li><a href="#pic3"><img src="./img/nero3.jpeg" alt=""></a></li>
+                    <li><a href="#pic4"><img src="./img/nero4.jpeg" alt=""></a></li>
+                    <li><a href="#pic5"><img src="./img/nero5.jpeg" alt=""></a></li>
+                    <li><a href="#pic6"><img src="./img/nero6.jpeg" alt=""></a></li>
+                    <li><a href="#pic7"><img src="./img/nero7.jpeg" alt=""></a></li>
+                    <li><a href="#pic8"><img src="./img/nero8.jpeg" alt=""></a></li>
+                    <li><a href="#pic9"><img src="./img/nero9.jpeg" alt=""></a></li>
+                    <li><a href="#pic10"><img src="./img/nero10.jpeg" alt=""></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </body>
+</html>
