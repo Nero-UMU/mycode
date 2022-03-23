@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            height: 100%;
+            background-image: url(img/bg2.jpg);
+            background-size: cover;
+        }
+
+        ul {
+            width: 300px;
+            height: 400px;
+            /* 实现在父元素中居中 */
+            /* position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%); */
+            margin: 100px auto;
+
+            /* border: 1px solid black; */
+            /* 3D 属性声明 */
+            transform-style: preserve-3d;
+            /* transform: rotateX(10deg); */
+            animation: rotatePic 50s linear infinite;
+        }
+
+        li {
+            width: 100%;
+            height: 100%;
+            /* 让所有的li集中在ul里 */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        li img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 原理：现在图片的基准中心和圆点重合，要实现圆形旋转效果，
+                对10张照片进行旋转，每张照片旋转36度，然后再沿着Z位移一个半径的距离 */
+        li:nth-child(1) {
+            transform: rotateY(36deg) translateZ(600px);
+        }
+
+        li:nth-child(2) {
+            transform: rotateY(72deg) translateZ(600px);
+        }
+
+        li:nth-child(3) {
+            transform: rotateY(108deg) translateZ(600px);
+        }
+
+        li:nth-child(4) {
+            transform: rotateY(144deg) translateZ(600px);
+        }
+
+        li:nth-child(5) {
+            transform: rotateY(180deg) translateZ(600px);
+        }
+
+        li:nth-child(6) {
+            transform: rotateY(216deg) translateZ(600px);
+        }
+
+        li:nth-child(7) {
+            transform: rotateY(252deg) translateZ(600px);
+        }
+
+        li:nth-child(8) {
+            transform: rotateY(288deg) translateZ(600px);
+        }
+
+        li:nth-child(9) {
+            transform: rotateY(324deg) translateZ(600px);
+        }
+
+        li:nth-child(10) {
+            transform: rotateY(360deg) translateZ(600px);
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        @keyframes rotatePic {
+
+            /* from{
+                    transform: rotateY(0deg);
+                }
+                to{
+                   transform: rotateY(360deg) 
+                } */
+            0% {
+                transform: rotateY(0deg) rotateX(0deg);
+            }
+
+            25% {
+                transform: rotateY(90deg) rotateX(10deg);
+            }
+
+            50% {
+                transform: rotateY(180deg) rotateX(0deg);
+            }
+
+            75% {
+                transform: rotateY(270deg) rotateX(-10deg);
+            }
+
+            100% {
+                transform: rotateY(360deg) rotateX(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><img src="img/pic1.jpg"></li>
+        <li><img src="img/pic2.png"></li>
+        <li><img src="img/pic3.png"></li>
+        <li><img src="img/pic4.png"></li>
+        <li><img src="img/pic5.jpg"></li>
+        <li><img src="img/pic6.png"></li>
+        <li><img src="img/pic7.png"></li>
+        <li><img src="img/pic8.png"></li>
+        <li><img src="img/pic9.png"></li>
+        <li><img src="img/pic10.png"></li>
+    </ul>
+    <div>
+        <img src="img/a.gif">
+    </div>
+</body>
+
+</html>

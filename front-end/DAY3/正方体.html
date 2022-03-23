@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            ul{
+                width: 400px;
+                height: 400px;
+                margin: 100px auto;
+                /* border: 1px solid black; */
+                /* 制作3D效果要进行3D属性声明 */
+                transform-style: preserve-3d;
+                position: relative;
+                transform: rotateX(30deg);
+                animation: cube 15s linear infinite;
+            }
+            li{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            li img{
+                width: 100%;
+                height: 100%;
+            }
+            /* 正面 */
+            li:nth-child(1){
+                /* translate 转换属性 translateZ指沿着Z轴位移 */
+                transform: translateZ(200px);
+            }
+            /* 后面的面:先将照片反转180度，然后沿着Z轴位移200px
+            反转后的Z轴正方向也会随着照片反转 */
+            li:nth-child(2){
+                transform: rotateY(180deg) translateZ(200px);
+            }
+            /* 左边的面：沿着Y轴的正方向旋转90度，然后沿着Z轴正方向位移200px */
+            li:nth-child(3){
+                transform: rotateY(90deg) translateZ(200px);
+            }
+            /* 右边的面 */
+            li:nth-child(4){
+                transform: rotateY(-90deg) translateZ(200px);
+            }
+            /* 上边的面;沿着X轴反向旋转90度，然后沿着Z轴正方向位移200px */
+            li:nth-child(5){
+                transform: rotateX(-90deg) translateZ(200px);
+            }
+            li:nth-child(6){
+                transform: rotateX(90deg) translateZ(200px);   
+            }
+            @keyframes cube {
+                from{
+                    /* 第一个参数指是否沿着X轴旋转，是为1,否为0
+                    第一个参数指是否沿着Y轴旋转，是为1,否为0
+                    第一个参数指是否沿着X轴旋转，是为1,否为0
+                    第四个为起始角度 */
+                    transform: rotate3d(1,1,1,0deg);
+                }
+                to{
+                    transform: rotate3d(1,1,1,360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><img src="img/jk01.jpg" alt=""></li>
+            <li><img src="img/jk02.jpg" alt=""></li>
+            <li><img src="img/jk03.jpg" alt=""></li>
+            <li><img src="img/jk04.jpg" alt=""></li>
+            <li><img src="img/jk01.jpg" alt=""></li>
+            <li><img src="img/jk02.jpg" alt=""></li>
+        </ul>
+    </body>
+</html>
