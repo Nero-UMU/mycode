@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+				text-decoration: none;
+            }
+            #box{
+                width: 1400px;
+                height: 400px;
+               
+				background-color: white;
+            }
+            .item{
+                width: 160px;
+                height: 20;
+                margin-left: 10px;
+                float: left;
+                line-height: 70px;
+				background-color: white;
+            }
+            .tongzhi, .zhaobiao{
+                width: 1400px;
+                height: 400px;
+                /* background-color: #00FFFF; */
+                position: absolute;
+                left: 0;
+                top: 70px;
+				border-top: 1px solid gray;
+            }
+            .tongzhi{
+                background-color:white;
+				background-image: url(../img/11111.jpg);
+            }
+            .zhaobiao{
+				
+                background-color:white;
+				background-image: url(../img/11111.jpg);
+            }
+            
+            
+            .item:nth-child(3) .zhaobiao{
+                display: none;
+            }
+            .item:nth-child(3):hover .zhaobiao{
+                display: block;
+            }
+			.bianqian{
+				width:350px ;
+				height:150px ;
+				float: left;
+				border: 1px solid wheat;
+				margin: 10px 50px;
+				background-color:white;
+			}
+			.bianqian p{
+				float: left;
+			}
+			.bianqian_1{
+				margin: 44px 20px;
+				font-size: larger;
+				color: #0000FF;
+				height: 50%;
+				border-right: 1px solid #808080;
+			}
+			.bianqian_2{
+				margin: 14px 0px;
+				height: 40px;
+			}
+			.bianqian_3{
+				width:252px ;
+				height:82px ;
+				font-size: small;
+				padding: 1px 1px;
+				
+			}
+			.bianqian2{
+				width:350px ;
+				height:150px ;
+				float: left;
+				border: 1px solid wheat;
+				margin: 10px 50px;
+				background-color:white;
+			}
+			.bianqian2 p{
+				float: left;
+			}
+			.bianqian_4{
+				margin: 44px 20px;
+				font-size: larger;
+				color:  #0000FF;
+				border: 1px solid #808080;
+			}
+			.bianqian_5{
+				margin: 14px 0px;
+				height: 40px;
+			}
+			.bianqian_6{
+				width:252px ;
+				height:82px ;
+				font-size: small;
+				padding: 1px 1px;
+				
+			}
+			.tongzhi .bianqian:hover{
+				border-radius:15px ;
+				box-shadow:5px 5px 10px black;
+			}
+			.zhaobiao .bianqian2:hover{
+				border-radius:15px ;
+				box-shadow:5px 5px 10px black;
+			}
+			.yst{
+			text-align: right;
+			}
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <ul>
+                <li class="item">
+                    <span><a href="#" >通知公告</a></span>
+                    <ul class="tongzhi">
+                        <li class="bianqian">
+							<p class="bianqian_1">03-23</p>
+							<p class="bianqian_2">关于申报江西省科协2022年...</p>
+							<p class="bianqian_3">各有关单位：今日接到江西省科协传达的...</p>
+						</li>
+						<li class="bianqian">
+							<p class="bianqian_1">03-23</p>
+							<p class="bianqian_2">关于开展第二届江西省高校...</p>
+							<p class="bianqian_3">为迎接第27个“世界读书日”，深入开展...</p>
+						</li>
+						<li class="bianqian">
+							<p class="bianqian_1">03-23</p>
+							<p class="bianqian_2">关于举办“终极幻境”第...</p>
+							<p class="bianqian_3">各单位，各部门：根据教育部，江西省教...</p>
+						</li>
+						<li class="bianqian">
+							<p class="bianqian_1">03-22</p>
+							<p class="bianqian_2">关于参加“百万网民学法律”</p>
+							<p class="bianqian_3">各学院，各单位：为落实教育部《全...</p>
+						</li>
+						<li class="bianqian">
+							<p class="bianqian_1">03-21</p>
+							<p class="bianqian_2">关于做好2022届本科生毕业...</p>
+							<p class="bianqian_3">各二级学院:根据学校要求,图书馆...</p>
+						</li>
+						<li class="bianqian">
+							<p class="bianqian_1">03-20</p>
+							<p class="bianqian_2">关于做好疫情防控间主校区...</p>
+							<p class="bianqian_3">各二级学院，各单位及校内住户,根据省...</p>
+						</li>
+                    </ul>
+                </li>
+				<li  class="item"><a href="#">讲座公告</a></li>
+                <li class="item">
+                    <span><a href="#">招标公告</a></span>
+                    <ul class="zhaobiao">
+						<li class="bianqian2">
+							<p class="bianqian_4">03-21</p>
+							<p class="bianqian_5">江西省首信招标有限公司...</p>
+							<p class="bianqian_6">项目概况九江学院紫薇园小区...</p>
+						</li>
+						<li class="bianqian2">
+							<p class="bianqian_4">03-07</p>
+							<p class="bianqian_5">九江学院绿地承包管理项目...</p>
+							<p class="bianqian_6">九江学院绿地承包项目(二项目)...</p>
+						</li>
+						<li class="bianqian2">
+							<p class="bianqian_4">03-04</p>
+							<p class="bianqian_5">九江学院绿地承包管理项目...</p>
+							<p class="bianqian_6">九江学院绿地承包项目(二项目)...<p>
+						</li>
+						<li class="bianqian2">
+							<p class="bianqian_4">02-20</p>
+							<p class="bianqian_5">九江学院逸夫图书馆改造...</p>
+							<p class="bianqian_6">九江学院逸夫图书馆改造...</p>
+						</li>
+						<li class="bianqian2">
+							<p class="bianqian_4">01-19</p>
+							<p class="bianqian_5">九江学院智能智造工程实训...</p>
+							<p class="bianqian_6">九江学院智能智造工程实训中心...</p>
+						</li>
+						<li class="bianqian2">
+							<p class="bianqian_4">01-18</p>
+							<p class="bianqian_5">九江学院智能智造工程实训...</p>
+							<p class="bianqian_6">九江学院智能智造工程实训中心...</p>
+						</li>
+						
+					</ul>	
+				</li>	
+				<li class="yst"><a href="#">更多+</a></li>
+        </div>
+    </body>
+</html>

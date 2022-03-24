@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            #box{
+                width: 400px;
+                height: 400px;
+                margin: 100px auto;
+                border: 1px solid black;
+                /* 超出可视div区域隐藏 */
+                overflow: hidden;
+                position: relative;
+            }
+            ul{
+                width: 1200px;
+                height: 100%;
+                position: absolute;
+                left: 0px;
+                animation: lunbo 6s linear infinite;
+                /* 设置反向播放 */
+                animation-direction: alternate;
+            }
+            li{
+                float: left;
+                width: 400px;
+                height: 400px;
+            }
+            @keyframes lunbo{
+                /* from{
+                    left: 0px;
+                }
+                to{
+                    left: -800px;
+                } */
+                0%{
+                    left: 0px;
+                }
+                20%{
+                    left: 0px;
+                }
+                40%{
+                    left: -400px;
+                }
+                50%{
+                    left: -400px;
+                }
+                80%{
+                    left: -800px;
+                }
+                100%{
+                    left: -800px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <ul>
+                <li><img src="img/jk04.jpg" alt=""></li>
+                <li><img src="img/jk02.jpg" alt=""></li>
+                <li><img src="img/jk03.jpg" alt=""></li>
+            </ul>
+        </div>
+    </body>
+</html>

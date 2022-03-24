@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.pagetop{
+    width: 100%;
+    height: 115px;
+    background-color: #249fb1;
+    position: relative;
+}
+.pagetop .top{
+    width: 1200px;
+    height: 115px;
+    background-image: url(../img/top_bg.jpg);
+}
+.pagetop .top img{
+    width: 275px;
+    height: 78px;
+    position: absolute;
+    left: 100px;
+    top: 15px;
+}
+.pagetop .right_box{
+    width: 277px;
+    height: 68px;
+    float: right;
+    position: absolute;
+    right: 250px;
+    top: 25px;
+}
+.pagetop .right_box ul{
+    width: 100%;
+    height: 68px;
+    position: absolute;
+    left: 30px;
+    top: -15px;
+}
+.pagetop .right_box li{
+    float: left;
+    margin: 15px 8px;
+    height: 68px;
+}
+.pagetop .right_box div{
+    width: 100%;
+    height: 100%;
+    color: #f7f7f7;
+    left: 0px;
+    top: 0px;
+}
+.pagetop .right_box .search{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    right: -30px;
+    top: 70px;
+}
+.pagetop .right_box .search input{
+    color: rgb(187, 211, 217);
+    background-color: rgba(36, 159, 177, 0);
+    border: none;
+    width: 200px;
+    height: 25px;
+    position: absolute;
+    left: 35px;
+    top: -8px;
+}
+.pagetop .right_box .search input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+  }
+.pagetop .right_box .search img{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+.pagemenu{
+    width: 100%;
+    height: 45px;
+    background: #f7f7f7;
+}
+.pagemenu .list{
+    height: 45px;
+    width: 1200px;
+    line-height: 45px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+}
+.pagemenu .list .item{
+    float: left;
+    width: 120px;
+    text-align: center;
+}
+.pagemenu .list .item ul{
+    width: 120px;
+    display: none;
+    background-color: #249fb1;
+}
+.pagemenu .list .item:hover{
+    background-color: #249fb1;
+    color: white;
+}
+.pagemenu .list .item:hover ul{
+    display: block;
+    position: absolute;
+    z-index: 10;
+}
+.pagemenu .list .item:hover ul li{
+    display: block;
+    z-index: 10;
+    font-size: 15px;
+    line-height: 30px;
+}
+.pageconter{
+    width: 1200px;
+    height: 335px;
+    position: relative;
+    left: 100px;
+    /* border: 2px solid black; */
+    overflow: hidden;
+}
+.pageconter .slide_pic{
+    width: 1200px;
+    height: 335px;
+    position: absolute;
+    left: 0;
+    animation: slide 30s linear infinite;
+    animation-direction: alternate;
+}
+.pageconter .slide_pic ul{
+    width: 12000px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+.pageconter .slide_pic ul li{
+    width: 1200px;
+    height: 100%;
+    float: left;
+}
+.news{
+    height: 400px;
+    width: 1200px;
+    /* border: 1px solid black; */
+    margin: 10px 0px 0px 100px;
+    overflow: hidden;
+}
+.news .pic_news{
+    height: 100%;
+    width: 380px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    position: relative;
+}
+.news .pic_news ul{
+    margin: 30px 0px;
+    width: 1600px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    animation: news_slide 10s linear infinite;
+    animation-direction: alternate;
+}
+.news .pic_news ul li{
+    float: left;
+     width: 400px;
+    height: 400px;
+}
+.news .pic_news img{
+    width: 100%;
+    height: 350px;
+}
+.news .zer{
+    width: 380px;
+    position: absolute;
+    border-bottom: 1px solid black;
+    left: 100px;
+    top: 500px;
+    font-size: 25px;
+}
+.news .zer li{
+    float: left;
+}
+.news .zer .more{
+    position: absolute;
+    right: 0px;
+}
+.special{
+    margin: 0;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: 500px;
+    top: 500px;
+}
+.special .title{
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+}
+.special .title .more{
+    position: absolute;
+    right: 0px;
+}
+.special .title li{
+    float: left;
+}
+.special .message{
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    margin: 10px auto;
+    /* border: 1px solid black; */
+}
+.special .message .xw1{
+    margin: 10px;
+    text-align: left;
+    font-size: 18px;
+    float: left;
+}
+.news .others{
+    height: 400px;
+    width: 400px;
+    margin: 0px;
+    position: absolute;
+    left: 902px;
+    top: 495px;
+    overflow: hidden;
+}
+.news .others .box{
+    width: 400px;
+    height: 400px;
+    margin: 0;
+}
+.news .others .more{
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    font-size: 24px;
+}
+.news .others .box .page{
+    width: 28%;
+    height: 35px;
+    font-size: 20px;
+    float: left;
+    font-size: 24px;
+    border-bottom: 1px solid black;
+    margin: 0;
+}
+.news .others .box .page .list{
+    position: absolute;
+    left: 0px;
+    top: 36px;
+    width: 380px;
+    height: 400px;
+}
+.news .others .box .page .list li{
+    font-size: 15px;
+    margin: 10px;
+}
+.news .others .box .page:nth-child(2) .list{
+    display: none;
+}
+.news .others .box .page:nth-child(3) .list{
+    display: none;
+}
+.news .others .box .page:hover .list{
+    display: block;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+@keyframes others_slide {
+    0%{
+        left: 0px;
+    }
+    20%{
+        left: 0px;
+    }
+    32%{
+        left: -400px;
+    }
+    60%{
+        left: -400px;
+    }
+    80%{
+        left: -800px;
+    }
+    100%{
+        left: -800px;
+    }
+}
+@keyframes news_slide {
+    0%{
+        left: 0px;
+    }
+    15%{
+        left: 0px;
+    }
+    30%{
+        left: -400px;
+    }
+    45%{
+        left: -400px;
+    }
+    60%{
+        left: -800px;
+    }
+    75%{
+        left: -800px;
+    }
+    90%{
+        left: -1200px;
+    }
+    100%{
+        left: -1200px;
+    }
+}
+@keyframes slide {
+    0%{
+        left: 0px;
+    }
+    8%{
+        left: 0px;
+    }
+    16%{
+        left: -1200px;
+    }
+    24%{
+        left: -1200px;
+    }
+    32%{
+        left: -2400px;
+    }
+    40%{
+        left: -2400px;
+    }
+    50%{
+        left: -3600px;
+    }
+    58%{
+        left: -3600px;
+    }
+    66%{
+        left: -4800px;
+    }
+    80%{
+        left: -4800px;
+    }
+    90%{
+        left: -6000px;
+    }
+    100%{
+        left: -6000px;
+    }
+}

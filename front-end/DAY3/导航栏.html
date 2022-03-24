@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #nav{
+            width: 1200px;
+            height: 70px;
+            background-color: green;
+            margin: 0 auto;
+        }
+        .nav_list{
+            width: 200px;
+            height: 100%;
+            float: left;
+            /* background-color: orange; */
+            line-height: 70px;
+            text-align: center;
+            margin-left: 50px;
+            color: white;
+            font-size: 24px;
+            font-weight: bolder;
+        }
+        .nav_list .secondary{
+            /* 将二级菜单隐藏: display: none将元素在页面进行隐藏，会在页面上消失 */
+            display: none;
+            width: 200px;
+            height: 150px;
+            background-color: green;
+        }
+        .nav_ul{
+            width: 800px;
+            height: 100%;
+            /* background-color: purple; */
+            margin: auto;
+        }
+        .nav_list:hover .secondary{
+            display: block;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="nav">
+            <ul class="nav_ul">
+                <li class="nav_list">概况
+                    <ul class="secondary">
+                        <li>业务体系</li>
+                        <li>关于</li>
+                    </ul>
+                </li>
+                <li class="nav_list">培训
+                    <ul class="secondary">
+                        <li>业务体系</li>
+                        <li>关于</li>
+                    </ul>
+                </li>
+                <li class="nav_list">服务
+                    <ul class="secondary">
+                        <li>业务体系</li>
+                        <li>关于</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
