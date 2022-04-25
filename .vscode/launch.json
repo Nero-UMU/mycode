@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch helloworld",
+            "request": "launch",
+            "mainClass": "helloworld",
+            "projectName": "testProgram_cdbe4c98"
+        },
+        {
             "name": "Listen for Xdebug",
             "type": "php",
             "request": "launch",
